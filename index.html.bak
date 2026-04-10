@@ -15,7 +15,7 @@
     
     <nav class="navbar hidden">
         <a href="#home" class="logo">
-            <img src="assets/logo.png" alt="SJ Studio Logo">
+            <img src="assets/logo.png" alt="SJ Studioz Logo">
             <span><span class="red">S</span>J STUDIO</span>
         </a>
         <ul class="nav-links">
