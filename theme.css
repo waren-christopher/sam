@@ -1,0 +1,57 @@
+/* THEME OVERRIDE: Midnight Blue & Warm Gold */
+:root {
+    --primary-red: #D4AF37; /* Metallic Warm Gold. Overriding the variable but keeping the name to maintain compatibility with style.css */
+    --dark-bg: #070B14;     /* Extremely deep navy/midnight blue */
+    --darker-bg: #030509;   /* Almost black navy */
+    --card-bg: #0C1220;     /* Elevated midnight card background */
+    --text-main: #F4F6F8;   /* Soft premium white */
+    --text-muted: #8E9BAE;  /* Cool-toned muted text */
+}
+
+/* OVERRIDE HARDCODED RED RGBA VALUES TO GOLD (212, 175, 55) */
+
+.btn {
+    border-color: var(--primary-red);
+}
+
+.btn:hover {
+    box-shadow: 0 12px 24px rgba(212, 175, 55, 0.4);
+    background-color: #E2BC4E; /* Lighter gold on hover */
+}
+
+.image-frame::before {
+    border-top: 4px solid var(--primary-red);
+    border-right: 4px solid var(--primary-red);
+}
+
+.service-card:hover { 
+    border-color: rgba(212, 175, 55, 0.5); 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 20px rgba(212, 175, 55, 0.15);
+}
+
+.role-badge {
+    background: rgba(212, 175, 55, 0.1);
+    color: var(--primary-red);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.abstract-portrait {
+    background: linear-gradient(135deg, var(--card-bg) 0%, rgba(212, 175, 55, 0.1) 100%);
+}
+
+@media(max-width: 768px) {
+    .nav-links {
+        border-bottom: 2px solid var(--primary-red);
+        background: rgba(7, 11, 20, 0.98); /* Update mobile nav bg */
+    }
+}
+
+.client-card:hover::after {
+    background: rgba(212, 175, 55, 0.5);
+}
+
+/* Text selections to look premium */
+::selection {
+    background: #D4AF37;
+    color: #000;
+}
